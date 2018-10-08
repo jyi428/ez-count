@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS FoodFact_db;
+
+CREATE DATABASE FoodFact_db;

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>Project Two</title>
+</head>
+
+<body>
+
+    
+
+
+    <main class="container" id="btn-home-view">
+        <!-- home view -->
+        <div id="home-view">
+            <h4></h4>
+        </div>
+        </div>
+        <!--  -->
+        <div class="container">
+            <header class="header">
+                <img src="img/CountChocula.png" alt="project logo" class="logo">
+
+                <form action="localhost:8080" method="get" id="food-form" class="search">
+                    <input type="text" id="food-input" class="search__input" placeholder="Search food">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+
+                        <a href="#" class="side-nav__link">
+                                <button id="btn-login" class="outline-button">
+                            <!-- <button id="btn-login" class="btn btn-primary btn-margin"> -->
+                                Log In
+                                
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="user-nav__icon-box">
+
+                        <a href="#" class="side-nav__link">
+                           
+                            <button id="btn-logout">
+                            <!-- <button id="btn-logout" class="btn btn-primary btn-margin"> -->
+                                Log Out
+                            </button>
+                        </a>
+
+                    </div>
+
+
+                    <div class="user-nav__user">
+                        <img src="img/murray.jpg" alt="User photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Bill</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="#" class="side-nav__link">
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <span>My Counter</span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav__item ">
+                            <a href="#" class="side-nav__link">
+                                <span>Blog</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="legal">
+                        &copy; 2017 by EZ Counter. All rights reserved.
+                    </div>
+                </nav>
+                <main class="food-view">
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <img src="img/food-1.jpg" alt="Photo of food 1" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/food-2.jpg" alt="Photo of food 3" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/food-3.jpg" alt="Photo of food 4" class="gallery__photo">
+                        </figure>
+                    </div>
+                    <div class="detail">
+                        <!--#two-->
+                        <div id="food-list"> 
+                            List of Foods
+                        </div>
+
+                        <!--#four-->
+                        <div id="nutrients">
+                            Nutrient Values
+                        </div>
+
+
+
+                       
+                    </div>
+
+                    <div class="footer">
+                            <h2 class="footer__count">
+                                Let the Count help you count! Add food information to your your journal!
+                            </h2>
+                            <button class="btn">
+                                <span class="btn__visible">Add Item</span>
+                                <span class="btn__invisible">EZ Counter!</span>
+                            </button>
+                        </div>
+                </main>
+
+                
+        
+                
+            </div>
+        </div>
+    </main>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="node_modules/auth0-js/build/auth0.js"></script>
+    <script src="https://cdn.auth0.com/js/auth0/9.5.1/auth0.min.js"></script>
+    <script src="./javascript/app.js"></script>
+    
+    <script src="./javascript/usda.js"></script>
+</body>
+
+</html>
