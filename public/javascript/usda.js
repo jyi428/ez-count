@@ -1,11 +1,8 @@
 // api key: Qrani6RonhXSZdvyBJ8X4aF5HrnR5WnVLAK8rXGo
 
-
-
 $(document).ready(function() {
 
   
-
   var nameArray = [];
   var input = $("#food-input");
 
@@ -28,7 +25,7 @@ $(document).ready(function() {
           url: queryURL,
           method: "GET"
         }).then(function(res) {
-          // console.log(res.list.item);
+          console.log(res.list.item);
           $.post("/api/USDA", { foods: res.list.item }, getUSDA);
         });
       }
